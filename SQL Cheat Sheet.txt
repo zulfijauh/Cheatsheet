@@ -50,8 +50,8 @@ SELECT DISTINCT column1 FROM table_name
 -- Join and merge more than 1 table
 LEFT JOIN table_name alias ON main_alias.column x = joining_alias.column x
 RIGHT JOIN table_name alias ON main_alias.column x = joining_alias.column x
-INNER JOIN
-FULL OUTER JOIN
-UNION --distinct duplicate
-UNION ALL --allows all duplication
+INNER JOIN #Joining inner data and all columns side by side
+FULL OUTER JOIN /*Joining outer data and all columns side by side */
+UNION /* Merge rows and distinct duplicate (all columns betweet two table must have similiar data types */
+UNION ALL /* Merge rows and allows all duplication (all columns betweet two table must have similiar data types */
 
