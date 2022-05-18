@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<title>House Price Prediction</title>
+</head>
+
+<body>
+	   <center>
+      <br>
+	   <h2> House Price Prediction in Washington </h2><p><p>
+	   <form method = "post" action = "/result/">
+                  <table border=1 width=50%>
+                     <tr>
+                        <td>Bedrooms</td>
+                        <td>
+                        <input type = "number" min="1" max="9" name="bedrooms" value="1">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Bathrooms</td>
+                        <td>
+                        <input type = "number" min="1" max="7" name="bathrooms" value="1">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Square Feet Living</td>
+                        <td>
+                        <input type = "number" name="sqft_living" value="1000">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Square Feet Lot</td>
+                        <td>
+                        <input type = "number" name="sqft_lot" value="1000">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Floors</td>
+                        <td>
+                        <select name="floors">
+							   <option value="1">1</option>
+							   <option value="1.5">1.5</option>
+                        <option value="2">2</option>
+                        <option value="2.5">2.5</option>
+                        <option value="3">3</option>
+                        <option value="3.5">3.5</option>
+                        </select>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Waterfront</td>
+                        <td>
+                        <select name="waterfront">
+							   <option value="0">No</option>
+							   <option value="1">Yes</option>
+                        </select>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>View Ratings</td>
+                        <td>
+                        <select name="view">
+							   <option value="0">Very Bad</option>
+							   <option value="1">Bad</option>
+							   <option value="2">Average</option>
+							   <option value="3">Good</option>
+							   <option value="4">Very Good</option>
+                        </select>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Condition</td>
+                        <td>
+                        <select name="condition">
+							   <option value="1">Very Bad</option>
+							   <option value="2">Bad</option>
+							   <option value="3">Average</option>
+							   <option value="4">Good</option>
+							   <option value="5">Very Good</option>
+                        </select>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Square Feet Above</td>
+                        <td>
+                        <input type = "number" name="sqft_above" value="1000">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>Square Feet Basement</td>
+                        <td>
+                        <input type = "number" name="sqft_basement" value="1000">
+                        </td>
+                     </tr>
+					 <tr>
+                        <td>Year Built</td>
+                        <td>
+                        <input type="number" min="1900" max="2014" step="1" name="yr_built" value="1900">
+                        </td>
+                     </tr>
+					 <tr>
+                        <td>City</td>
+                        <td>
+                        <select name="city">
+                           <option value= 0 > Algona </option>
+                           <option value= 1 > Auburn </option>
+                           <option value= 2 > Beaux Arts Village </option>
+                           <option value= 3 > Bellevue </option>
+                           <option value= 4 > Black Diamond </option>
+                           <option value= 5 > Bothell </option>
+                           <option value= 6 > Burien </option>
+                           <option value= 7 > Carnation </option>
+                           <option value= 8 > Clyde Hill </option>
+                           <option value= 9 > Covington </option>
+                           <option value= 10 > Des Moines </option>
+                           <option value= 11 > Duvall </option>
+                           <option value= 12 > Enumclaw </option>
+                           <option value= 13 > Fall City </option>
+                           <option value= 14 > Federal Way </option>
+                           <option value= 15 > Inglewood-Finn Hill </option>
+                           <option value= 16 > Issaquah </option>
+                           <option value= 17 > Kenmore </option>
+                           <option value= 18 > Kent </option>
+                           <option value= 19 > Kirkland </option>
+                           <option value= 20 > Lake Forest Park </option>
+                           <option value= 21 > Maple Valley </option>
+                           <option value= 22 > Medina </option>
+                           <option value= 23 > Mercer Island </option>
+                           <option value= 24 > Milton </option>
+                           <option value= 25 > Newcastle </option>
+                           <option value= 26 > Normandy Park </option>
+                           <option value= 27 > North Bend </option>
+                           <option value= 28 > Pacific </option>
+                           <option value= 29 > Preston </option>
+                           <option value= 30 > Ravensdale </option>
+                           <option value= 31 > Redmond </option>
+                           <option value= 32 > Renton </option>
+                           <option value= 33 > Sammamish </option>
+                           <option value= 34 > SeaTac </option>
+                           <option value= 35 > Seattle </option>
+                           <option value= 36 > Shoreline </option>
+                           <option value= 37 > Skykomish </option>
+                           <option value= 38 > Snoqualmie </option>
+                           <option value= 39 > Snoqualmie Pass </option>
+                           <option value= 40 > Tukwila </option>
+                           <option value= 41 > Vashon </option>
+                           <option value= 42 > Woodinville </option>
+                           <option value= 43 > Yarrow Point </option>
+						</select>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td> </td>
+                        <td><input type="reset" value="Reset"> 
+                           <input name = "submit" type = "submit" value = "Submit">
+                        </td>
+                     </tr>
+                  </table>
+</form>
+<p><p>
+
+<p>
+</body>
+<body>
+   <table border=0 width=50%>
+      <tr>
+         <td>Machine Learning model by: Zulfi Jauharul Ikhsan</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td><a href = https://linktr.ee/zulfijauh> Say hi to me</a></td>
+         <td></td>
+      </tr>
+</body>
+</html>
